@@ -1,0 +1,63 @@
+﻿<!DOCTYPE HTML>
+<html>
+  <head>
+      <title>Cadastro</title>
+	<script type="text/javascript">
+		function validar(){
+		var n1 = document.getElementById("txtnome").value;
+		if (n1==""){
+			window.alert("digite o nome");
+			document.getElementById("txtnome").focus();
+			document.getElementById("txtnome").style.background-Color="#ff0000";
+			}
+			else if (n2==""){
+				window.alert("digite o endereço");
+				document.getElementById("txtender").focus();
+				}
+			else{
+			window.alert("cadastro OK");
+			}
+		}
+			</script>
+			</head>
+			<body>
+				<form id="frmcadastro" method="get">
+				<p>Nome: <input type="text" id="txtnome" required size="42" maxlength="40" /></p>
+				<p>Endereço:<br/><br/>
+				<label>
+				Rua:<input type="text" id="txtend" required > <br/><br/>
+				Número:<input type="text" id="txtend" required ><br/><br/>
+				CEP:  <input type="text" id="txtend" required > 
+				
+				
+				</label>
+				</p>	</p>
+				<p>
+		<label> Telefone:  <input type="tel" id="txtfone" required placeholder="(xx)xxxx-xxxx">  </label>
+		</p>
+				
+				<p>sexo:
+				masculino <input type="radio" id="rdsex" name="sexo" value="m" checked="checked"/>
+				feminino <input type="radio" id="rdsex" name="sexo" value="f" /> </p>
+				<p>situação:
+				empregado<input type="checkbox" id="chkemp" value="e" />
+				casado<input type="checkbox" id="chkcas" value="c" />
+				estudante<input type="checkbox" id="chkest" value="ok" /> </p>
+<p> período:	
+				<select id="selper">
+						<option value="m"> manhã</option>
+						<option value="t"> tarde</option>
+						<option value="n" selected="selected"> noite</option>
+						<option value="v"> vespertino</option>
+						</select> </p>
+						<p>Observações:
+						<textarea id="txtobs" cols="40" rows="5">
+						</textarea> </p>
+						<input type="submit"    value="confirma o cadastro"  />
+						<input type="reset" value="limpar os dados" />
+						<input type="button" value="verificar os dados" onClick="validar()" />
+						</form>
+						</body>
+						</html>
+
+ 
